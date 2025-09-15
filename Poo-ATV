@@ -1,0 +1,65 @@
+class Animal {
+    String nome;
+    String raca;
+
+    public Animal(String nome, String raca) {
+        this.nome = nome;
+        this.raca = raca;
+    }
+
+    public void comer() {
+        System.out.println(nome + " esta comendo.");
+    }
+
+    public void andar() {
+        System.out.println(nome + " esta andando.");
+    }
+}
+
+class Ave extends Animal {
+    public Ave(String nome, String raca) {
+        super(nome, raca);
+    }
+
+    public void voar() {
+        System.out.println(nome + " esta voando: Flap Flap");
+    }
+
+    public void aterrissar() {
+        System.out.println(nome + " esta aterrissando: ksks");
+    }
+}
+
+class Cachorro extends Animal {
+    public Cachorro(String nome, String raca) {
+        super(nome, raca);
+    }
+
+    public void latir() {
+        System.out.println(nome + " esta latindo: Au au!");
+    }
+
+    @Override
+    public void andar() {
+        System.out.println(nome + " esta andando: tac tac");
+    }
+} // <-- fecha a classe Cachorro
+
+public class Main {
+    public static void main(String[] args) {
+        Cachorro meuCachorro = new Cachorro("Rex", "Pastor Alemao");
+        Ave minhaAve = new Ave("Piu", "Canario");
+
+        System.out.println("Nome do cachorro: " + meuCachorro.nome + " | Raca: " + meuCachorro.raca);
+        meuCachorro.comer();
+        meuCachorro.latir();
+        meuCachorro.andar();
+
+        System.out.println();
+
+        System.out.println("Nome da ave: " + minhaAve.nome + " | Raca: " + minhaAve.raca);
+        minhaAve.comer();
+        minhaAve.voar();
+        minhaAve.aterrissar();
+    }
+}
