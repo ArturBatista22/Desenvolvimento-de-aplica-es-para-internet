@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Saúde Pet - AUMIGOS FELINOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="../index.html">AUMIGOS FELINOS</a></h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="plano-saude.html" class="nav-link active">Plano de Saúde</a></li>
+                    <li><a href="petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cadastro-pets.html" class="btn-secondary">Cadastrar Pet</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Plano de Saúde Pet</h1>
+            <p>Proteção completa para a saúde do seu melhor amigo</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que escolher nosso Plano de Saúde?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Proteção Total</h3>
+                    <p>Cobertura completa para consultas, exames, cirurgias e emergências</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Atendimento 24h</h3>
+                    <p>Emergências veterinárias disponíveis 24 horas por dia, 7 dias por semana</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Economia Garantida</h3>
+                    <p>Economize até 70% em procedimentos veterinários com nossos planos</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Veterinários Especializados</h3>
+                    <p>Rede credenciada com os melhores profissionais da região</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans">
+        <div class="container">
+            <h2 class="section-title">Escolha o Plano Ideal</h2>
+            <div class="plans-grid">
+                <!-- Plano Básico -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Ideal para cuidados preventivos</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 2 consultas veterinárias por ano</li>
+                            <li><i class="fas fa-check"></i> Vacinação anual incluída</li>
+                            <li><i class="fas fa-check"></i> Vermifugação semestral</li>
+                            <li><i class="fas fa-check"></i> 20% desconto em medicamentos</li>
+                            <li><i class="fas fa-check"></i> 15% desconto em banho e tosa</li>
+                            <li><i class="fas fa-times"></i> Exames laboratoriais</li>
+                            <li><i class="fas fa-times"></i> Cirurgias</li>
+                            <li><i class="fas fa-times"></i> Atendimento 24h</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline plan-btn" data-plan="basico">Contratar Plano</button>
+                </div>
+
+                <!-- Plano Completo -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>Plano Completo</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">89</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Proteção completa para seu pet</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Consultas veterinárias ilimitadas</li>
+                            <li><i class="fas fa-check"></i> Vacinação anual incluída</li>
+                            <li><i class="fas fa-check"></i> Vermifugação semestral</li>
+                            <li><i class="fas fa-check"></i> Exames laboratoriais básicos</li>
+                            <li><i class="fas fa-check"></i> 50% desconto em medicamentos</li>
+                            <li><i class="fas fa-check"></i> 30% desconto em banho e tosa</li>
+                            <li><i class="fas fa-check"></i> Cirurgias simples cobertas</li>
+                            <li><i class="fas fa-times"></i> Atendimento 24h</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary plan-btn" data-plan="completo">Contratar Plano</button>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Premium</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Máxima proteção e conforto</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Consultas veterinárias ilimitadas</li>
+                            <li><i class="fas fa-check"></i> Vacinação anual incluída</li>
+                            <li><i class="fas fa-check"></i> Vermifugação semestral</li>
+                            <li><i class="fas fa-check"></i> Todos os exames laboratoriais</li>
+                            <li><i class="fas fa-check"></i> Medicamentos inclusos</li>
+                            <li><i class="fas fa-check"></i> Banho e tosa gratuitos</li>
+                            <li><i class="fas fa-check"></i> Todas as cirurgias cobertas</li>
+                            <li><i class="fas fa-check"></i> Atendimento 24h incluído</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline plan-btn" data-plan="premium">Contratar Plano</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Details -->
+    <section class="coverage">
+        <div class="container">
+            <h2 class="section-title">Detalhes da Cobertura</h2>
+            <div class="coverage-tabs">
+                <button class="tab-btn active" data-tab="consultas">Consultas</button>
+                <button class="tab-btn" data-tab="exames">Exames</button>
+                <button class="tab-btn" data-tab="cirurgias">Cirurgias</button>
+                <button class="tab-btn" data-tab="emergencias">Emergências</button>
+            </div>
+            
+            <div class="tab-content active" id="consultas">
+                <div class="coverage-content">
+                    <h3>Consultas Veterinárias</h3>
+                    <div class="coverage-grid">
+                        <div class="coverage-item">
+                            <h4>Consulta de Rotina</h4>
+                            <p>Avaliação geral da saúde do pet, orientações preventivas e acompanhamento do desenvolvimento.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Consulta Especializada</h4>
+                            <p>Atendimento com veterinários especialistas em cardiologia, dermatologia, oftalmologia e outras áreas.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Retorno</h4>
+                            <p>Consultas de retorno para acompanhamento de tratamentos em andamento, sem custo adicional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="exames">
+                <div class="coverage-content">
+                    <h3>Exames Laboratoriais</h3>
+                    <div class="coverage-grid">
+                        <div class="coverage-item">
+                            <h4>Hemograma Completo</h4>
+                            <p>Análise detalhada do sangue para detectar infecções, anemias e outras alterações.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Bioquímico</h4>
+                            <p>Avaliação da função renal, hepática e outros órgãos através de exames bioquímicos.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Radiografias</h4>
+                            <p>Exames de imagem para diagnóstico de fraturas, problemas respiratórios e digestivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="cirurgias">
+                <div class="coverage-content">
+                    <h3>Procedimentos Cirúrgicos</h3>
+                    <div class="coverage-grid">
+                        <div class="coverage-item">
+                            <h4>Castração</h4>
+                            <p>Procedimento de esterilização para controle populacional e benefícios à saúde.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Cirurgias Ortopédicas</h4>
+                            <p>Correção de fraturas, luxações e outros problemas ósseos e articulares.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Remoção de Tumores</h4>
+                            <p>Cirurgias para remoção de massas e tumores, com análise histopatológica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="emergencias">
+                <div class="coverage-content">
+                    <h3>Atendimento de Emergência</h3>
+                    <div class="coverage-grid">
+                        <div class="coverage-item">
+                            <h4>Pronto Socorro 24h</h4>
+                            <p>Atendimento emergencial disponível 24 horas por dia, todos os dias da semana.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>Internação</h4>
+                            <p>Internação em ambiente controlado com monitoramento constante quando necessário.</p>
+                        </div>
+                        <div class="coverage-item">
+                            <h4>UTI Veterinária</h4>
+                            <p>Unidade de terapia intensiva equipada para casos críticos e pós-operatório.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona a carência do plano?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O plano tem carência de 30 dias para consultas e 90 dias para cirurgias. Emergências são cobertas imediatamente após a contratação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso usar o plano em qualquer clínica?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O plano é válido em nossa rede credenciada, que inclui mais de 50 clínicas veterinárias na região metropolitana.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Há limite de idade para contratar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pets podem ser incluídos no plano a partir de 2 meses de idade. Não há limite máximo de idade para contratação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso cancelar o plano a qualquer momento?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, o cancelamento pode ser solicitado a qualquer momento, com 30 dias de antecedência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Proteja seu pet hoje mesmo!</h2>
+                <p>Contrate agora e garanta a saúde e bem-estar do seu melhor amigo</p>
+                <a href="cadastro-pets.html" class="btn-primary">Contratar Plano</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="servicos.html">Banho e Tosa</a></li>
+                        <li><a href="servicos.html">Hotel para Pets</a></li>
+                        <li><a href="plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="loja.html">Para Cães</a></li>
+                        <li><a href="loja.html">Para Gatos</a></li>
+                        <li><a href="loja.html">Para Hamsters</a></li>
+                        <li><a href="petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plan Modal -->
+    <div id="planModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="planModalTitle">Contratar Plano</h3>
+            <form id="planForm">
+                <div class="form-group">
+                    <label for="planOwnerName">Seu Nome Completo:</label>
+                    <input type="text" id="planOwnerName" name="ownerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="planEmail">E-mail:</label>
+                    <input type="email" id="planEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="planPhone">Telefone:</label>
+                    <input type="tel" id="planPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="planPetName">Nome do Pet:</label>
+                    <input type="text" id="planPetName" name="petName" required>
+                </div>
+                <div class="form-group">
+                    <label for="planPetType">Tipo do Pet:</label>
+                    <select id="planPetType" name="petType" required>
+                        <option value="">Selecione</option>
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                        <option value="hamster">Hamster</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="planPetAge">Idade do Pet:</label>
+                    <input type="number" id="planPetAge" name="petAge" min="0" max="30" required>
+                </div>
+                <div class="plan-summary">
+                    <h4>Resumo do Plano:</h4>
+                    <p id="planSummary"></p>
+                    <div class="plan-total">
+                        <strong>Valor Mensal: R$ <span id="planPrice">0,00</span></strong>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Contratar Plano</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

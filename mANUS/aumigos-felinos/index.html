@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUMIGOS FELINOS - Petshop Completo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AUMIGOS FELINOS</h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pages/servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="pages/loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="pages/plano-saude.html" class="nav-link">Plano de Saúde</a></li>
+                    <li><a href="pages/petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="pages/conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="pages/saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="pages/cadastro-pets.html" class="btn-secondary">Cadastrar Pet</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cuidando dos seus <span class="highlight">Aumigos</span> com amor</h1>
+                <p class="hero-description">O melhor petshop para cães, gatos e hamsters. Oferecemos serviços veterinários completos, produtos de qualidade e muito carinho para seus pets.</p>
+                <div class="hero-buttons">
+                    <a href="pages/servicos.html" class="btn-primary">Nossos Serviços</a>
+                    <a href="pages/loja.html" class="btn-outline">Ver Produtos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/cachorro_fofo.jpg" alt="Cachorro fofo" class="hero-pet">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a AUMIGOS FELINOS</h2>
+                    <p>Há mais de 10 anos cuidando dos seus pets com dedicação e carinho. Nossa missão é proporcionar o melhor atendimento veterinário e os produtos de mais alta qualidade para cães, gatos e hamsters.</p>
+                    <p>Contamos com uma equipe especializada e apaixonada por animais, oferecendo desde consultas veterinárias até serviços de hotel e adestramento.</p>
+                    <a href="pages/saiba-mais.html" class="btn-primary">Saiba Mais</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Anos de experiência</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5000+</h3>
+                        <p>Pets atendidos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24h</h3>
+                        <p>Atendimento emergencial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consultas Veterinárias</h3>
+                    <p>Atendimento completo com veterinários especializados</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Vacinação</h3>
+                    <p>Programa completo de vacinação para todas as idades</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Banho e Tosa</h3>
+                    <p>Cuidados estéticos com produtos de qualidade</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Hotel para Pets</h3>
+                    <p>Hospedagem confortável e segura para seu pet</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="pages/servicos.html" class="btn-primary">Ver Todos os Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Produtos para seu Pet</h2>
+            <div class="products-categories">
+                <div class="category-card">
+                    <img src="images/cachorro_fofo.jpg" alt="Produtos para cães">
+                    <h3>Para Cães</h3>
+                    <p>Ração, brinquedos, acessórios e muito mais</p>
+                    <a href="pages/loja.html?categoria=caes" class="btn-outline">Ver Produtos</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/gato_fofo.jpg" alt="Produtos para gatos">
+                    <h3>Para Gatos</h3>
+                    <p>Ração, arranhadores, brinquedos e acessórios</p>
+                    <a href="pages/loja.html?categoria=gatos" class="btn-outline">Ver Produtos</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/hamster_fofo.jpg" alt="Produtos para hamsters">
+                    <h3>Para Hamsters</h3>
+                    <p>Gaiolas, ração, brinquedos e acessórios</p>
+                    <a href="pages/loja.html?categoria=hamsters" class="btn-outline">Ver Produtos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Services -->
+    <section class="special-services">
+        <div class="container">
+            <h2 class="section-title">Serviços Especiais</h2>
+            <div class="special-grid">
+                <div class="special-card">
+                    <div class="special-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Plano de Saúde Pet</h3>
+                    <p>Cobertura completa para consultas, exames e procedimentos</p>
+                    <a href="pages/plano-saude.html" class="btn-primary">Contratar Plano</a>
+                </div>
+                <div class="special-card">
+                    <div class="special-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>PetBox Mensal</h3>
+                    <p>Caixa surpresa mensal com produtos selecionados para seu pet</p>
+                    <a href="pages/petbox.html" class="btn-primary">Assinar PetBox</a>
+                </div>
+                <div class="special-card">
+                    <div class="special-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>ConectaPet</h3>
+                    <p>Comunidade para pais de pets compartilharem experiências</p>
+                    <a href="pages/conectapet.html" class="btn-primary">Participar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excelente atendimento! Minha cachorrinha Luna adora vir aqui. Os veterinários são muito carinhosos e competentes."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Maria Silva</h4>
+                        <span>Tutora da Luna</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"O PetBox é incrível! Meu gato Mimi sempre fica ansioso esperando a caixa chegar. Produtos de ótima qualidade!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>João Santos</h4>
+                        <span>Tutor do Mimi</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"O plano de saúde salvou minha vida! Quando meu hamster Pipoca ficou doente, tudo foi coberto pelo plano."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Ana Costa</h4>
+                        <span>Tutora da Pipoca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para cuidar melhor do seu pet?</h2>
+                <p>Cadastre seu pet e tenha acesso a todos os nossos serviços e benefícios exclusivos</p>
+                <a href="pages/cadastro-pets.html" class="btn-primary">Cadastrar Meu Pet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="pages/servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="pages/servicos.html">Banho e Tosa</a></li>
+                        <li><a href="pages/servicos.html">Hotel para Pets</a></li>
+                        <li><a href="pages/plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="pages/loja.html">Para Cães</a></li>
+                        <li><a href="pages/loja.html">Para Gatos</a></li>
+                        <li><a href="pages/loja.html">Para Hamsters</a></li>
+                        <li><a href="pages/petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="pages/diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

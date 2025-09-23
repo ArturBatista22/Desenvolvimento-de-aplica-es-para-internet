@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - AUMIGOS FELINOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="../index.html">AUMIGOS FELINOS</a></h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="plano-saude.html" class="nav-link">Plano de Saúde</a></li>
+                    <li><a href="petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cadastro-pets.html" class="btn-secondary">Cadastrar Pet</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-header">
+                <h1>Finalizar Compra</h1>
+                <div class="checkout-steps">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                        <span class="step-title">Dados Pessoais</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-title">Endereço</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-title">Pagamento</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-title">Confirmação</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <!-- Step 1: Personal Data -->
+                    <div class="checkout-step active" id="step1">
+                        <h2>Dados Pessoais</h2>
+                        <form id="personalDataForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Nome:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Sobrenome:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone:</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cpf">CPF:</label>
+                                    <input type="text" id="cpf" name="cpf" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthDate">Data de Nascimento:</label>
+                                    <input type="date" id="birthDate" name="birthDate" required>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-primary next-step">Continuar</button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Address -->
+                    <div class="checkout-step" id="step2">
+                        <h2>Endereço de Entrega</h2>
+                        <form id="addressForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" id="cep" name="cep" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="street">Rua:</label>
+                                    <input type="text" id="street" name="street" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="number">Número:</label>
+                                    <input type="text" id="number" name="number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="complement">Complemento:</label>
+                                    <input type="text" id="complement" name="complement">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="neighborhood">Bairro:</label>
+                                    <input type="text" id="neighborhood" name="neighborhood" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Cidade:</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="state">Estado:</label>
+                                    <select id="state" name="state" required>
+                                        <option value="">Selecione</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <!-- Add more states -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-outline prev-step">Voltar</button>
+                                <button type="button" class="btn-primary next-step">Continuar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div class="checkout-step" id="step3">
+                        <h2>Forma de Pagamento</h2>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                                <label for="creditCard">
+                                    <i class="fas fa-credit-card"></i>
+                                    Cartão de Crédito
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="debitCard" name="paymentMethod" value="debitCard">
+                                <label for="debitCard">
+                                    <i class="fas fa-credit-card"></i>
+                                    Cartão de Débito
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="pix" name="paymentMethod" value="pix">
+                                <label for="pix">
+                                    <i class="fas fa-qrcode"></i>
+                                    PIX
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="boleto" name="paymentMethod" value="boleto">
+                                <label for="boleto">
+                                    <i class="fas fa-barcode"></i>
+                                    Boleto Bancário
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="payment-details" id="cardDetails">
+                            <form id="paymentForm">
+                                <div class="form-group">
+                                    <label for="cardNumber">Número do Cartão:</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardName">Nome no Cartão:</label>
+                                        <input type="text" id="cardName" name="cardName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardExpiry">Validade:</label>
+                                        <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/AA">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardCvv">CVV:</label>
+                                        <input type="text" id="cardCvv" name="cardCvv" placeholder="000">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="installments">Parcelas:</label>
+                                        <select id="installments" name="installments">
+                                            <option value="1">1x sem juros</option>
+                                            <option value="2">2x sem juros</option>
+                                            <option value="3">3x sem juros</option>
+                                            <option value="6">6x com juros</option>
+                                            <option value="12">12x com juros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="step-buttons">
+                            <button type="button" class="btn-outline prev-step">Voltar</button>
+                            <button type="button" class="btn-primary next-step">Continuar</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div class="checkout-step" id="step4">
+                        <h2>Confirmação do Pedido</h2>
+                        <div class="order-summary">
+                            <h3>Resumo do Pedido</h3>
+                            <div id="orderItems"></div>
+                            <div class="order-total">
+                                <div class="total-line">
+                                    <span>Subtotal:</span>
+                                    <span id="subtotal">R$ 0,00</span>
+                                </div>
+                                <div class="total-line">
+                                    <span>Frete:</span>
+                                    <span id="shipping">Grátis</span>
+                                </div>
+                                <div class="total-line total">
+                                    <span>Total:</span>
+                                    <span id="total">R$ 0,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="delivery-info">
+                            <h3>Informações de Entrega</h3>
+                            <p id="deliveryAddress"></p>
+                            <p><strong>Prazo de entrega:</strong> 3-5 dias úteis</p>
+                        </div>
+
+                        <div class="step-buttons">
+                            <button type="button" class="btn-outline prev-step">Voltar</button>
+                            <button type="button" class="btn-primary" id="finalizeOrder">Finalizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary Sidebar -->
+                <div class="order-sidebar">
+                    <div class="sidebar-content">
+                        <h3>Resumo do Pedido</h3>
+                        <div class="cart-items" id="sidebarCartItems">
+                            <!-- Cart items will be populated here -->
+                        </div>
+                        <div class="order-totals">
+                            <div class="total-line">
+                                <span>Subtotal:</span>
+                                <span id="sidebarSubtotal">R$ 0,00</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Frete:</span>
+                                <span>Grátis</span>
+                            </div>
+                            <div class="total-line total">
+                                <span>Total:</span>
+                                <span id="sidebarTotal">R$ 0,00</span>
+                            </div>
+                        </div>
+                        <div class="security-badges">
+                            <div class="badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Compra Segura</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-truck"></i>
+                                <span>Frete Grátis</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-undo"></i>
+                                <span>Troca Garantida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Pedido Realizado com Sucesso!</h3>
+            <p>Seu pedido foi confirmado e será processado em breve.</p>
+            <div class="order-number">
+                <strong>Número do Pedido: <span id="orderNumber">#12345</span></strong>
+            </div>
+            <p>Você receberá um e-mail com os detalhes do pedido e informações de acompanhamento.</p>
+            <div class="modal-buttons">
+                <a href="../index.html" class="btn-outline">Voltar ao Início</a>
+                <a href="loja.html" class="btn-primary">Continuar Comprando</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="servicos.html">Banho e Tosa</a></li>
+                        <li><a href="servicos.html">Hotel para Pets</a></li>
+                        <li><a href="plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="loja.html">Para Cães</a></li>
+                        <li><a href="loja.html">Para Gatos</a></li>
+                        <li><a href="loja.html">Para Hamsters</a></li>
+                        <li><a href="petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

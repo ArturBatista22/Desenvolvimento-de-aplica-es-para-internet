@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - AUMIGOS FELINOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="../index.html">AUMIGOS FELINOS</a></h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="loja.html" class="nav-link active">Loja</a></li>
+                    <li><a href="plano-saude.html" class="nav-link">Plano de Saúde</a></li>
+                    <li><a href="petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cadastro-pets.html" class="btn-secondary">Cadastrar Pet</a>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossa Loja</h1>
+            <p>Produtos de qualidade para cães, gatos e hamsters</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="shop-filters">
+                    <h3>Filtros</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Categoria</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="all" checked>
+                                <span>Todos os Produtos</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="caes">
+                                <span>Para Cães</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="gatos">
+                                <span>Para Gatos</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="hamsters">
+                                <span>Para Hamsters</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Tipo de Produto</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="type" value="racao">
+                                <span>Ração</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="type" value="brinquedos">
+                                <span>Brinquedos</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="type" value="acessorios">
+                                <span>Acessórios</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="type" value="higiene">
+                                <span>Higiene</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Faixa de Preço</h4>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="0" max="500" value="500">
+                            <div class="price-display">
+                                <span>R$ 0</span>
+                                <span id="maxPrice">R$ 500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="clearFilters">Limpar Filtros</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="shop-content">
+                    <div class="shop-header">
+                        <div class="results-info">
+                            <span id="resultsCount">24 produtos encontrados</span>
+                        </div>
+                        <div class="sort-options">
+                            <select id="sortSelect">
+                                <option value="name">Ordenar por Nome</option>
+                                <option value="price-low">Menor Preço</option>
+                                <option value="price-high">Maior Preço</option>
+                                <option value="newest">Mais Recentes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Produtos para Cães -->
+                        <div class="product-card" data-category="caes" data-type="racao" data-price="89.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_1.jpg" alt="Ração Premium para Cães">
+                                <div class="product-badge">Bestseller</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Ração Premium para Cães Adultos</h3>
+                                <p class="product-description">Ração super premium com ingredientes naturais</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(127 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 89,90</span>
+                                    <span class="original-price">R$ 109,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="1" data-name="Ração Premium para Cães Adultos" data-price="89.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="caes" data-type="brinquedos" data-price="24.90">
+                            <div class="product-image">
+                                <img src="../images/cachorro_fofo.jpg" alt="Brinquedo Corda para Cães">
+                            </div>
+                            <div class="product-info">
+                                <h3>Brinquedo Corda Resistente</h3>
+                                <p class="product-description">Corda de algodão natural para diversão</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(89 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 24,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="2" data-name="Brinquedo Corda Resistente" data-price="24.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="caes" data-type="acessorios" data-price="45.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_2.png" alt="Coleira Ajustável">
+                            </div>
+                            <div class="product-info">
+                                <h3>Coleira Ajustável com LED</h3>
+                                <p class="product-description">Coleira com luz LED para passeios noturnos</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(156 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 45,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="3" data-name="Coleira Ajustável com LED" data-price="45.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Produtos para Gatos -->
+                        <div class="product-card" data-category="gatos" data-type="racao" data-price="79.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_1.jpg" alt="Ração para Gatos">
+                                <div class="product-badge">Novo</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Ração Premium para Gatos</h3>
+                                <p class="product-description">Ração balanceada para gatos adultos</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(98 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 79,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="4" data-name="Ração Premium para Gatos" data-price="79.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="gatos" data-type="brinquedos" data-price="19.90">
+                            <div class="product-image">
+                                <img src="../images/gato_fofo.jpg" alt="Varinha com Penas">
+                            </div>
+                            <div class="product-info">
+                                <h3>Varinha com Penas</h3>
+                                <p class="product-description">Brinquedo interativo para estimular o gato</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(67 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 19,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="5" data-name="Varinha com Penas" data-price="19.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="gatos" data-type="acessorios" data-price="129.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_2.png" alt="Arranhador Torre">
+                            </div>
+                            <div class="product-info">
+                                <h3>Arranhador Torre Deluxe</h3>
+                                <p class="product-description">Torre arranhador com múltiplos níveis</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(203 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 129,90</span>
+                                    <span class="original-price">R$ 159,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="6" data-name="Arranhador Torre Deluxe" data-price="129.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Produtos para Hamsters -->
+                        <div class="product-card" data-category="hamsters" data-type="racao" data-price="29.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_1.jpg" alt="Ração para Hamsters">
+                            </div>
+                            <div class="product-info">
+                                <h3>Ração Completa para Hamsters</h3>
+                                <p class="product-description">Mix nutritivo com sementes e grãos</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(45 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 29,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="7" data-name="Ração Completa para Hamsters" data-price="29.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="hamsters" data-type="acessorios" data-price="89.90">
+                            <div class="product-image">
+                                <img src="../images/hamster_fofo.jpg" alt="Gaiola Completa">
+                            </div>
+                            <div class="product-info">
+                                <h3>Gaiola Completa Deluxe</h3>
+                                <p class="product-description">Gaiola espaçosa com todos os acessórios</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(78 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 89,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="8" data-name="Gaiola Completa Deluxe" data-price="89.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="hamsters" data-type="brinquedos" data-price="15.90">
+                            <div class="product-image">
+                                <img src="../images/produtos_petshop_3.png" alt="Roda de Exercício">
+                            </div>
+                            <div class="product-info">
+                                <h3>Roda de Exercício Silenciosa</h3>
+                                <p class="product-description">Roda ergonômica e silenciosa</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(34 avaliações)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">R$ 15,90</span>
+                                </div>
+                                <button class="btn-primary add-to-cart" data-id="9" data-name="Roda de Exercício Silenciosa" data-price="15.90">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">Próximo</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+            </div>
+            <a href="pagamento.html" class="btn-primary cart-checkout">Finalizar Compra</a>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="servicos.html">Banho e Tosa</a></li>
+                        <li><a href="servicos.html">Hotel para Pets</a></li>
+                        <li><a href="plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="loja.html">Para Cães</a></li>
+                        <li><a href="loja.html">Para Gatos</a></li>
+                        <li><a href="loja.html">Para Hamsters</a></li>
+                        <li><a href="petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - AUMIGOS FELINOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="../index.html">AUMIGOS FELINOS</a></h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link active">Serviços</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="plano-saude.html" class="nav-link">Plano de Saúde</a></li>
+                    <li><a href="petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cadastro-pets.html" class="btn-secondary">Cadastrar Pet</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <p>Cuidados completos para o bem-estar do seu pet</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-detail">
+        <div class="container">
+            <div class="services-grid-detail">
+                <!-- Consultas Veterinárias -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/servicos_veterinarios_1.jpg" alt="Consultas Veterinárias">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Consultas Veterinárias</h3>
+                        <p>Atendimento veterinário completo com profissionais especializados em cães, gatos e hamsters. Realizamos diagnósticos precisos e tratamentos personalizados.</p>
+                        <ul class="service-features">
+                            <li>Consultas de rotina</li>
+                            <li>Diagnósticos especializados</li>
+                            <li>Atendimento de emergência 24h</li>
+                            <li>Acompanhamento pós-consulta</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 80,00</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="consulta">Agendar Consulta</button>
+                    </div>
+                </div>
+
+                <!-- Vacinação -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/servicos_veterinarios_2.jpg" alt="Vacinação">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3>Vacinação</h3>
+                        <p>Programa completo de vacinação para proteger seu pet contra as principais doenças. Seguimos o calendário vacinal recomendado.</p>
+                        <ul class="service-features">
+                            <li>Vacinas múltiplas (V8, V10)</li>
+                            <li>Vacina antirrábica</li>
+                            <li>Vacinas específicas para gatos</li>
+                            <li>Cartão de vacinação digital</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 60,00</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="vacinacao">Agendar Vacinação</button>
+                    </div>
+                </div>
+
+                <!-- Cirurgias -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/servicos_veterinarios_1.jpg" alt="Cirurgias">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Cirurgias</h3>
+                        <p>Centro cirúrgico equipado com tecnologia de ponta para procedimentos simples e complexos, sempre com anestesia segura.</p>
+                        <ul class="service-features">
+                            <li>Castração</li>
+                            <li>Cirurgias ortopédicas</li>
+                            <li>Remoção de tumores</li>
+                            <li>Cirurgias de emergência</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 300,00</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="cirurgia">Consultar Cirurgia</button>
+                    </div>
+                </div>
+
+                <!-- Banho e Tosa -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/produtos_petshop_3.png" alt="Banho e Tosa">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Banho e Tosa</h3>
+                        <p>Serviços de estética e higiene com produtos de alta qualidade. Deixamos seu pet limpo, cheiroso e bonito.</p>
+                        <ul class="service-features">
+                            <li>Banho com produtos hipoalergênicos</li>
+                            <li>Tosa higiênica e estética</li>
+                            <li>Corte de unhas</li>
+                            <li>Limpeza de ouvidos</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 45,00</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="banho">Agendar Banho</button>
+                    </div>
+                </div>
+
+                <!-- Hotel para Pets -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/cachorro_fofo.jpg" alt="Hotel para Pets">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Hotel para Pets</h3>
+                        <p>Hospedagem confortável e segura para quando você precisar viajar. Seu pet ficará em um ambiente acolhedor com cuidados especiais.</p>
+                        <ul class="service-features">
+                            <li>Suítes individuais climatizadas</li>
+                            <li>Alimentação personalizada</li>
+                            <li>Recreação e exercícios</li>
+                            <li>Monitoramento 24h</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 80,00/dia</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="hotel">Reservar Hotel</button>
+                    </div>
+                </div>
+
+                <!-- Adestramento -->
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="../images/gato_fofo.jpg" alt="Adestramento">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Adestramento</h3>
+                        <p>Treinamento comportamental para cães com métodos positivos e eficazes. Melhoramos a convivência entre você e seu pet.</p>
+                        <ul class="service-features">
+                            <li>Adestramento básico</li>
+                            <li>Correção comportamental</li>
+                            <li>Socialização</li>
+                            <li>Treinamento personalizado</li>
+                        </ul>
+                        <div class="service-price">
+                            <span>A partir de R$ 120,00</span>
+                        </div>
+                        <button class="btn-primary service-btn" data-service="adestramento">Iniciar Adestramento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div class="emergency-text">
+                    <h3>Atendimento de Emergência 24h</h3>
+                    <p>Estamos sempre prontos para atender seu pet em situações de emergência</p>
+                </div>
+                <div class="emergency-contact">
+                    <a href="tel:11999999999" class="btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        (11) 9999-9999
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Precisa de algum serviço?</h2>
+                <p>Entre em contato conosco e agende o melhor cuidado para seu pet</p>
+                <a href="cadastro-pets.html" class="btn-primary">Agendar Serviço</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="servicos.html">Banho e Tosa</a></li>
+                        <li><a href="servicos.html">Hotel para Pets</a></li>
+                        <li><a href="plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="loja.html">Para Cães</a></li>
+                        <li><a href="loja.html">Para Gatos</a></li>
+                        <li><a href="loja.html">Para Hamsters</a></li>
+                        <li><a href="petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle">Agendar Serviço</h3>
+            <form id="serviceForm">
+                <div class="form-group">
+                    <label for="petName">Nome do Pet:</label>
+                    <input type="text" id="petName" name="petName" required>
+                </div>
+                <div class="form-group">
+                    <label for="ownerName">Seu Nome:</label>
+                    <input type="text" id="ownerName" name="ownerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data Preferida:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Horário Preferido:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Selecione um horário</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="observations">Observações:</label>
+                    <textarea id="observations" name="observations" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

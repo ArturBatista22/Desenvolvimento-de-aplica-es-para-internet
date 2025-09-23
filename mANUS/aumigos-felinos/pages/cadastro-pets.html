@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pets - AUMIGOS FELINOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="../index.html">AUMIGOS FELINOS</a></h1>
+                    <span>Petshop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="loja.html" class="nav-link">Loja</a></li>
+                    <li><a href="plano-saude.html" class="nav-link">Plano de Saúde</a></li>
+                    <li><a href="petbox.html" class="nav-link">PetBox</a></li>
+                    <li><a href="conectapet.html" class="nav-link">ConectaPet</a></li>
+                    <li><a href="saiba-mais.html" class="nav-link">Saiba Mais</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cadastro-pets.html" class="btn-secondary active">Cadastrar Pet</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Cadastro de Pets</h1>
+            <p>Registre seu pet e tenha acesso a todos os nossos serviços</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="pet-registration">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-info">
+                    <h2>Por que cadastrar seu pet?</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Histórico Médico</h4>
+                                <p>Mantenha todo o histórico médico do seu pet organizado e acessível</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Agendamentos Rápidos</h4>
+                                <p>Agende consultas e serviços de forma mais rápida e prática</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Lembretes Automáticos</h4>
+                                <p>Receba lembretes de vacinas, consultas e cuidados importantes</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-percent"></i>
+                            <div>
+                                <h4>Ofertas Exclusivas</h4>
+                                <p>Tenha acesso a promoções e descontos especiais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration-form">
+                    <form id="petRegistrationForm">
+                        <h3>Dados do Tutor</h3>
+                        <div class="form-section">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ownerName">Nome Completo:</label>
+                                    <input type="text" id="ownerName" name="ownerName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ownerEmail">E-mail:</label>
+                                    <input type="email" id="ownerEmail" name="ownerEmail" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ownerPhone">Telefone:</label>
+                                    <input type="tel" id="ownerPhone" name="ownerPhone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ownerCpf">CPF:</label>
+                                    <input type="text" id="ownerCpf" name="ownerCpf" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ownerAddress">Endereço Completo:</label>
+                                <textarea id="ownerAddress" name="ownerAddress" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <h3>Dados do Pet</h3>
+                        <div class="form-section">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petName">Nome do Pet:</label>
+                                    <input type="text" id="petName" name="petName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="petType">Tipo:</label>
+                                    <select id="petType" name="petType" required>
+                                        <option value="">Selecione</option>
+                                        <option value="cao">Cão</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="hamster">Hamster</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petBreed">Raça:</label>
+                                    <input type="text" id="petBreed" name="petBreed" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="petGender">Sexo:</label>
+                                    <select id="petGender" name="petGender" required>
+                                        <option value="">Selecione</option>
+                                        <option value="macho">Macho</option>
+                                        <option value="femea">Fêmea</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petBirthDate">Data de Nascimento:</label>
+                                    <input type="date" id="petBirthDate" name="petBirthDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="petWeight">Peso (kg):</label>
+                                    <input type="number" id="petWeight" name="petWeight" step="0.1" min="0" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="petColor">Cor:</label>
+                                    <input type="text" id="petColor" name="petColor" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="petSize">Porte (para cães):</label>
+                                    <select id="petSize" name="petSize">
+                                        <option value="">Não se aplica</option>
+                                        <option value="pequeno">Pequeno (até 10kg)</option>
+                                        <option value="medio">Médio (10-25kg)</option>
+                                        <option value="grande">Grande (25kg+)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="petPhoto">Foto do Pet:</label>
+                                <input type="file" id="petPhoto" name="petPhoto" accept="image/*">
+                                <small>Formatos aceitos: JPG, PNG (máx. 5MB)</small>
+                            </div>
+                        </div>
+
+                        <h3>Informações de Saúde</h3>
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="petCastrated">Castrado:</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="petCastrated" value="sim"> Sim</label>
+                                    <label><input type="radio" name="petCastrated" value="nao"> Não</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="petVaccines">Vacinas em Dia:</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="petVaccines" value="sim"> Sim</label>
+                                    <label><input type="radio" name="petVaccines" value="nao"> Não</label>
+                                    <label><input type="radio" name="petVaccines" value="parcial"> Parcialmente</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="petAllergies">Alergias Conhecidas:</label>
+                                <textarea id="petAllergies" name="petAllergies" rows="3" placeholder="Descreva qualquer alergia ou sensibilidade conhecida"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="petMedications">Medicamentos em Uso:</label>
+                                <textarea id="petMedications" name="petMedications" rows="3" placeholder="Liste medicamentos que o pet está tomando atualmente"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="petConditions">Condições Médicas:</label>
+                                <textarea id="petConditions" name="petConditions" rows="3" placeholder="Descreva qualquer condição médica ou problema de saúde"></textarea>
+                            </div>
+                        </div>
+
+                        <h3>Preferências e Comportamento</h3>
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="petTemperament">Temperamento:</label>
+                                <select id="petTemperament" name="petTemperament">
+                                    <option value="">Selecione</option>
+                                    <option value="docil">Dócil</option>
+                                    <option value="agitado">Agitado</option>
+                                    <option value="timido">Tímido</option>
+                                    <option value="agressivo">Agressivo</option>
+                                    <option value="brincalhao">Brincalhão</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="petSocialization">Socialização:</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="petSocialization" value="criancas"> Convive bem com crianças</label>
+                                    <label><input type="checkbox" name="petSocialization" value="outros_pets"> Convive bem com outros pets</label>
+                                    <label><input type="checkbox" name="petSocialization" value="estranhos"> Convive bem com estranhos</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="petFood">Alimentação Preferida:</label>
+                                <input type="text" id="petFood" name="petFood" placeholder="Marca e tipo de ração preferida">
+                            </div>
+                            <div class="form-group">
+                                <label for="petToys">Brinquedos Favoritos:</label>
+                                <input type="text" id="petToys" name="petToys" placeholder="Tipos de brinquedos que o pet mais gosta">
+                            </div>
+                            <div class="form-group">
+                                <label for="petNotes">Observações Adicionais:</label>
+                                <textarea id="petNotes" name="petNotes" rows="4" placeholder="Qualquer informação adicional importante sobre seu pet"></textarea>
+                            </div>
+                        </div>
+
+                        <h3>Serviços de Interesse</h3>
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label>Quais serviços você tem interesse?</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="services" value="consultas"> Consultas Veterinárias</label>
+                                    <label><input type="checkbox" name="services" value="vacinacao"> Vacinação</label>
+                                    <label><input type="checkbox" name="services" value="banho_tosa"> Banho e Tosa</label>
+                                    <label><input type="checkbox" name="services" value="hotel"> Hotel para Pets</label>
+                                    <label><input type="checkbox" name="services" value="adestramento"> Adestramento</label>
+                                    <label><input type="checkbox" name="services" value="plano_saude"> Plano de Saúde</label>
+                                    <label><input type="checkbox" name="services" value="petbox"> PetBox</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-terms">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                                <span class="checkmark"></span>
+                                Aceito os <a href="diretrizes.html" target="_blank">termos de uso</a> e <a href="diretrizes.html" target="_blank">política de privacidade</a>
+                            </label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary">Cadastrar Pet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="registrationSuccessModal" class="modal">
+        <div class="modal-content success">
+            <div class="success-icon">
+                <i class="fas fa-paw"></i>
+            </div>
+            <h3>Pet Cadastrado com Sucesso!</h3>
+            <p>Parabéns! Seu pet foi cadastrado em nosso sistema.</p>
+            <div class="pet-card-preview">
+                <h4>Cartão do Pet</h4>
+                <div class="pet-info">
+                    <strong>Nome:</strong> <span id="previewPetName">-</span><br>
+                    <strong>Tipo:</strong> <span id="previewPetType">-</span><br>
+                    <strong>Código:</strong> <span id="previewPetCode">#PET001</span>
+                </div>
+            </div>
+            <p>Agora você pode agendar serviços e ter acesso a todos os benefícios exclusivos!</p>
+            <div class="modal-buttons">
+                <a href="../index.html" class="btn-outline">Voltar ao Início</a>
+                <a href="servicos.html" class="btn-primary">Agendar Serviço</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AUMIGOS FELINOS</h3>
+                    <p>Cuidando dos seus pets com amor e dedicação há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Consultas Veterinárias</a></li>
+                        <li><a href="servicos.html">Banho e Tosa</a></li>
+                        <li><a href="servicos.html">Hotel para Pets</a></li>
+                        <li><a href="plano-saude.html">Plano de Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="loja.html">Para Cães</a></li>
+                        <li><a href="loja.html">Para Gatos</a></li>
+                        <li><a href="loja.html">Para Hamsters</a></li>
+                        <li><a href="petbox.html">PetBox</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@aumigosfelinos.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua dos Pets, 123 - São Paulo</li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AUMIGOS FELINOS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
