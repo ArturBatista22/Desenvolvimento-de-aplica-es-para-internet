@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add">+</button>
+    <div id="numero">0</div>
+    <button id="menos">-</button>
+
+    <script>
+        let add = document.getElementById("add")
+        let numero = document.getElementById("numero")
+        let menos = document.getElementById("menos")
+
+        add.addEventListener("click", function(){
+            numero.textContent = parseInt(numero.textContent)+1
+        })
+
+        menos.addEventListener("click", function(){
+            if(numero.textContent >0)
+            numero.textContent = parseInt(numero.textContent)-1
+        })
+    </script>
+</body>
+</html>
