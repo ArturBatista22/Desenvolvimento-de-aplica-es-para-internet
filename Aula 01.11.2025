@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA1</title>
+</head>
+<body>
+    <button id="button">Enviar</button>
+    <input type="text" id="input">
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+        let button = document.getElementById("button")
+        let input = document.getElementById("input")
+        let lista = document.getElementById("lista")
+        let itens = JSON.parse(localStorage.getItem("itens")) ??[]
+        for(let index = 0 ; index < itens.length ; index++) {
+            let item = document.createElement("li")
+            item.textContent = itens[index]
+            lista.appendChild(item)
+        }
+
+        button.addEventListener("click", function() {
+            if(input.value != ''){
+            //   lista.innerHTML += `<li>${input.value}</li>`
+            let item = document.createElement("li")
+            item.textContent = input.value
+            lista.appendChild(item)
+            itens.push(input.value)
+            localStorage.setItem("itens", JSON.stringify(itens))
+            }
+            input.value = ''
+        })
+    </script>
+
+</body>
+</html>
