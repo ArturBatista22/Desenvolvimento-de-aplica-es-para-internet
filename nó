@@ -1,0 +1,40 @@
+/**
+ * Classe genérica que representa um Nó em uma Lista Encadeada Simples.
+ * @param <T> O tipo de dado que o Nó irá armazenar.
+ */
+public class Node<T> {
+
+    // O dado que o Nó armazena.
+    private T data;
+
+    // A referência para o próximo Nó na lista.
+    private Node<T> next;
+
+    /**
+     * Construtor para criar um novo Nó.
+     * @param data O dado a ser armazenado neste Nó.
+     */
+    public Node(T data) {
+        this.data = data;
+        // Por padrão, um novo Nó não aponta para ninguém.
+        this.next = null;
+    }
+
+    // --- Métodos Getters e Setters ---
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public Node<T> getNext() {
+        return next;
+    }
+
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
+}
